@@ -139,7 +139,7 @@
                 data.AbsensiDatabase.forEach(item => {
                     let li = document.createElement('li');
                     // Ganti 'kolomData' sesuai dengan judul kolom di Google Sheet Anda
-                    li.textContent = item.kolomData; 
+                    li.textContent = `Timestamp: ${item.timestamp} | Nama: ${item.nama}` | `Kelas: ${item.kelas} | Ttd: ${item.ttd}`; 
                     list.appendChild(li);
                 });
             })
